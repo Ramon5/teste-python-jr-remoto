@@ -1,0 +1,6 @@
+[run]
+source = .
+omit = ./envs/*,*tests*,*apps.py,*settings.py*,*celery.py*,*tasks.py*,*manage.py,*__init__.py,*migrations*,*asgi*,*wsgi*,*admin.py,*urls.py
+
+[report]
+omit = ./envs/*,*tests*,*apps.py,*settings.py*,*celery.py*,*tasks.py*,*manage.py,*__init__.py,*migrations*,*asgi*,*wsgi*,*admin.py,*urls.py

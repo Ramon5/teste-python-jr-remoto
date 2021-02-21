@@ -7,16 +7,18 @@ class Migration(migrations.Migration):
 
     initial = True
 
-    dependencies = [
-    ]
+    dependencies = []
 
     operations = [
         migrations.CreateModel(
-            name='Organization',
+            name="Organization",
             fields=[
-                ('login', models.CharField(max_length=255, primary_key=True, serialize=False)),
-                ('name', models.CharField(max_length=255)),
-                ('score', models.IntegerField()),
+                (
+                    "login",
+                    models.CharField(max_length=255, primary_key=True, serialize=False),
+                ),
+                ("name", models.CharField(max_length=255)),
+                ("score", models.IntegerField()),
             ],
-        ),
+        )
     ]
