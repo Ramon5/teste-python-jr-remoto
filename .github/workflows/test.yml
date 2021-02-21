@@ -20,5 +20,5 @@ jobs:
     - name: Test with Django
       run: |
         pipenv install --dev
-        pytest -v . --cov api/
+        pipenv run pytest -v . --cov api/
       working-directory: ${{env.working-directory}}
