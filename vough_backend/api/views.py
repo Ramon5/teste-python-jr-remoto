@@ -17,7 +17,7 @@ class OrganizationViewSet(viewsets.ModelViewSet):
     queryset = models.Organization.objects.all()
     serializer_class = serializers.OrganizationSerializer
     lookup_field = "login"
-
+    http_method_names = ["get","delete"]
 
     def __init__(self, *args, **kwargs):
         super(OrganizationViewSet, self).__init__(*args, **kwargs)
